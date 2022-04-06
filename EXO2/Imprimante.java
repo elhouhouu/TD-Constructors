@@ -1,3 +1,5 @@
+package EXO2;
+
 public class Imprimante {
 
     private static Imprimante imprimante;

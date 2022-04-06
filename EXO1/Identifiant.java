@@ -1,3 +1,5 @@
+package EXO1;
+
 public class Identifiant {
 
     private static Identifiant id;
