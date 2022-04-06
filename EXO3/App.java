@@ -4,10 +4,10 @@ public class App {
 
     public static void main(String[] args) {
 
-        Banque cic = new Banque();
+        Banque uneBanque = new Banque("Crédit agricole");
 
-        System.out.println(cic.getCarteCredit("mastercard").fonction());
-        System.out.println(cic.getCarteDebit("visa").fonction());
+        System.out.println(uneBanque+" "+uneBanque.getCarteCredit("mastercard").fonction());
+        System.out.println(uneBanque+" "+uneBanque.getCarteDebit("visa").fonction());
 
     }
 }

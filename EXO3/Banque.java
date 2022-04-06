@@ -5,7 +5,10 @@ import java.util.*;
 public class Banque {
 
 
-    public Banque() {
+    private String nom;
+
+    public Banque(String nom) {
+        this.nom=nom;
     }
 
     public Carte getCarteCredit(String type) {
@@ -16,5 +19,10 @@ public class Banque {
     public Carte getCarteDebit(String type) {
         Carte carte = DebitCreator.createCarte(type);
         return carte;
+    }
+
+    @Override
+    public String toString() {
+        return nom+" : ";
     }
 }
