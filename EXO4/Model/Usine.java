@@ -4,12 +4,14 @@ import java.util.*;
 public abstract class Usine {
 
     private String ville;
+    private String constructeur;
 
-    public Usine(String uneVille) {
+    public Usine(String uneVille, String unConstructeur) {
         ville=uneVille;
+        constructeur = unConstructeur;
     }
 
-    public abstract Avion fabriqueAvion(String modeleAvion, String marqueReacteur);
+    public abstract Avion fabriquerAvion(String modeleAvion, String marqueReacteur);
 
     public abstract Satellite fabriquerSatellite(String modeleSatellite);
 

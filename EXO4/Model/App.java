@@ -10,9 +10,7 @@ public class App {
 
         UsineAirbus airbusToulouse = new UsineAirbus("Toulouse");
 
-        Avion modele320 = airbusToulouse.fabriqueAvion("320", "Rolls-Roys");
-
-
+        Avion modele320 = airbusToulouse.fabriquerAvion("320", "Rolls-Roys");
 
 
     }

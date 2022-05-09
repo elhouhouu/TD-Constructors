@@ -7,11 +7,11 @@ public class UsineAirbus extends Usine {
     SatelliteTerrestre unSatellite;
 
     public UsineAirbus(String uneVille) {
-        super(uneVille);
+        super(uneVille, "Airbus");
     }
 
     @Override
-    public Avion fabriqueAvion(String modeleAvion, String marqueReacteur) {
+    public Avion fabriquerAvion(String modeleAvion, String marqueReacteur) {
         unAvion = new Airbus(marqueReacteur, modeleAvion);
 
         return unAvion;
