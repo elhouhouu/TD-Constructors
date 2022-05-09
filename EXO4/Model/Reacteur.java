@@ -10,6 +10,9 @@ public class Reacteur {
         modele=unModele;
     }
 
+    public String getMarque() {
+        return marque;
+    }
 
     @Override
     public String toString() {

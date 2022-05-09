@@ -21,8 +21,13 @@ public abstract class Avion {
     @Override
     public String toString() {
         return "Avion{" +
-                "modele='" + modele + '\'' +
-                ", fuselage=" + fuselage +
+                "Modèle='" + modele + '\'' +
+                ", Fuselage=" + fuselage.getPoids() +
+                ", Capacité=" + fuselage.getCapacite() +
+                ", Nb réacteurs=" + fuselage.getListReacteurs().size() +
+                ", Marque=" + fuselage.getListReacteurs().get(0).getMarque() +
+                ", Poids=" + fuselage.getPoids() +
+                ", Poussée=" + fuselage.getPoussee() +
                 '}';
     }
 }

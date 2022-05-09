@@ -21,6 +21,22 @@ public class Fuselage {
         return listReacteurs;
     }
 
+    public int getPoids() {
+        return poids;
+    }
+
+    public int getCapacite() {
+        return capacite;
+    }
+
+    public String getMarque() {
+        return marque;
+    }
+
+    public int getPoussee() {
+        return poussee;
+    }
+
     @Override
     public String toString() {
         return "Fuselage{" +

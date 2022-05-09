@@ -8,7 +8,6 @@ public class App {
 
         Fuselage unFuselage = new Fuselage("Airbus", 30, 120, 10);
         Reacteur rolls = new Reacteur("Rolls-Roys", "1");
-        //Reacteur trent = new Reacteur("Trent", "2", unFuselage);
 
         unFuselage.getListReacteurs().add(rolls);
         unFuselage.getListReacteurs().add(rolls);
