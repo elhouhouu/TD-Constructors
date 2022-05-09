@@ -20,4 +20,15 @@ public class Fuselage {
     public ArrayList<Reacteur> getListReacteurs() {
         return listReacteurs;
     }
+
+    @Override
+    public String toString() {
+        return "Fuselage{" +
+                "marque='" + marque + '\'' +
+                ", poids=" + poids +
+                ", capacite=" + capacite +
+                ", poussee=" + poussee +
+                ", Réacteurs=" + listReacteurs.size() +
+                '}';
+    }
 }

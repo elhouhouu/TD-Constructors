@@ -13,4 +13,16 @@ public abstract class Avion {
     public Fuselage getFuselage() {
         return fuselage;
     }
+
+    public void setFuselage(Fuselage fuselage) {
+        this.fuselage = fuselage;
+    }
+
+    @Override
+    public String toString() {
+        return "Avion{" +
+                "modele='" + modele + '\'' +
+                ", fuselage=" + fuselage +
+                '}';
+    }
 }
