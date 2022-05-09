@@ -3,14 +3,17 @@ import java.util.*;
 
 public class Immatriculation {
 
-    private Immatriculation reference;
+    private static Immatriculation reference = null;
+    private static int cptId;
 
     public Immatriculation() {
     }
 
-    public Immatriculation getInstance() {
-        // TODO implement here
-        return null;
+    public static Immatriculation getImmatriculation() {
+        if(reference==null)
+            reference = new Immatriculation();
+
+        return reference;
     }
 
 }

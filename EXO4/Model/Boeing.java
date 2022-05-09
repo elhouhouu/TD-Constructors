@@ -1,5 +1,4 @@
 package EXO4.Model;
-
 import java.util.*;
 
 public class Boeing extends Avion {

@@ -6,5 +6,4 @@ public class SatelliteEspace extends Satellite {
     public SatelliteEspace(String unModele) {
         super(unModele);
     }
-
 }

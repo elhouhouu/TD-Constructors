@@ -8,7 +8,11 @@ public class App {
 
         imprimante.imprimer(5);
         imprimante.imprimer(15);
+
         System.out.println(imprimante.getNbPages());
+
+        System.out.println(imprimante.getImprimante());
+        System.out.println(imprimante.getImprimante());
 
     }
 }

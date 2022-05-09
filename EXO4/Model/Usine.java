@@ -4,8 +4,6 @@ import java.util.*;
 public abstract class Usine {
 
     private String ville;
-    Avion unAvion;
-    Satellite unSatellite;
 
     public Usine(String uneVille) {
         ville=uneVille;
