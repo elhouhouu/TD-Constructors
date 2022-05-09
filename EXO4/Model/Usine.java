@@ -1,26 +1,19 @@
 package EXO4.Model;
-
 import java.util.*;
 
-public class Usine {
+public abstract class Usine {
 
     private String ville;
+    Avion unAvion;
+    Satellite unSatellite;
 
     public Usine(String uneVille) {
         ville=uneVille;
     }
 
+    public abstract Avion fabriqueAvion(String modeleAvion, String marqueReacteur);
 
-    public Avion fabriqueAvion(String modeleAvion, String marqueReacteur) {
-        //Avion unAvion = new Avion(modeleAvion, )
-        return null;
-    }
-
-    public Satellite fabriquerSatellite() {
-
-        return null;
-    }
-
+    public abstract Satellite fabriquerSatellite(String modeleSatellite);
 
     @Override
     public String toString() {

@@ -1,8 +1,7 @@
 package EXO4.Model;
-
 import java.util.*;
 
-public class Satellite {
+public abstract class Satellite {
 
     private String modele;
 

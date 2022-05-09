@@ -1,32 +1,26 @@
 package EXO4.Model;
-
 import java.util.*;
 
-/**
- * 
- */
 public class UsineAirbus extends Usine {
 
-    /**
-     * Default constructor
-     */
-    public UsineAirbus() {
+    Airbus unAvion;
+    SatelliteTerrestre unSatellite;
+
+    public UsineAirbus(String uneVille) {
+        super(uneVille);
     }
 
-    /**
-     * @return
-     */
-    public Avion fabriquerAvion() {
-        // TODO implement here
-        return null;
+    @Override
+    public Avion fabriqueAvion(String modeleAvion, String marqueReacteur) {
+        unAvion = new Airbus(marqueReacteur, modeleAvion);
+
+        return unAvion;
     }
 
-    /**
-     * @return
-     */
-    public Satellite fabriquerSatellite() {
-        // TODO implement here
-        return null;
-    }
+    @Override
+    public Satellite fabriquerSatellite(String modeleSatellite) {
+        unSatellite = new SatelliteTerrestre(modeleSatellite);
 
+        return unSatellite;
+    }
 }
